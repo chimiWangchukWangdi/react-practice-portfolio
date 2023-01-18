@@ -7,7 +7,6 @@ import {
   AiFillYoutube,
 } from "react-icons/ai";
 import Image from "next/legacy/image";
-import Image from "next/image";
 import deved from "../../public/dev-ed-wave.png";
 import design from "../../public/design.png";
 import code from "../../public/code.png";
@@ -26,7 +25,8 @@ export default function Home() {
     {
       image: design,
       title: "Beautiful design",
-      description: "Creating elegant designs suited for your needs following code",
+      description:
+        "Creating elegant designs suited for your needs following code",
       desingTools: "Design tools I use",
       toolOne: "Photoshop",
       toolTwo: "Illustrator",
@@ -35,7 +35,8 @@ export default function Home() {
     {
       image: code,
       title: "Code your dream project",
-      description: "Do you have an idea for your next great website? Let's make it a reality",
+      description:
+        "Do you have an idea for your next great website? Let's make it a reality",
       desingTools: "Design tools I use",
       toolOne: "Photoshop",
       toolTwo: "Illustrator",
@@ -44,7 +45,8 @@ export default function Home() {
     {
       image: consulting,
       title: "Consulting",
-      description: "Are you interested in feedback for your current project? I can give you tips and tricks to level it up.",
+      description:
+        "Are you interested in feedback for your current project? I can give you tips and tricks to level it up.",
       desingTools: "Design tools I use",
       toolOne: "Photoshop",
       toolTwo: "Illustrator",
@@ -123,15 +125,15 @@ export default function Home() {
         <section>
           <div>
             <h3 className="text-3xl py-1 dark:text-white">Services I offer</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Since the beginning of my journey as a freelance developer and
-              designer, I have done remote work for
-              <span className="text-teal-500"> agencies </span>
-              consulted for <span className="text-teal-500">startups </span>
-              and collaborated with talented people to create digital products
-              for both business and consumer use.
+            <p className="text-md py-2 leading-8 text-gray-800 md:text-lg dark:text-gray-200">
+              I offer website development and design services, creating visually
+              appealing and user-friendly websites optimized for search engines
+              and mobile devices. Additionally, I provide custom e-commerce
+              platform development to streamline the online shopping experience
+              for customers, as well as mobile and web application development
+              tailored to the specific needs of a business.
             </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+            <p className="text-md py-2 leading-8 text-gray-800 md:text-lg dark:text-gray-200">
               I offer a wide range of services, including programming and
               teaching.
             </p>
@@ -141,13 +143,13 @@ export default function Home() {
               <div className="flex items-center flex-col shadow-lg p-10 rounded-xl my-10 dark:bg-white">
                 <Image src={service.image} width={100} height={100} />
                 <h3 className="text-lg font-medium pt-8 pb-2">
-                  {service.topic}
+                  {service.title}
                 </h3>
-                <p className="py-2">{service.desc}</p>
-                <h4 className="py-4 text-teal-600">{service.title}</h4>
-                <p className="text-gray-800 py-1">{service.subTitle1}</p>
-                <p className="text-gray-800 py-1">I{service.subTitle2}</p>
-                <p className="text-gray-800 py-1">{service.subTitle3}</p>
+                <p className="py-2">{service.description}</p>
+                <h4 className="py-4 text-teal-600">{service.desingTools}</h4>
+                <p className="text-gray-800 py-1">{service.toolOne}</p>
+                <p className="text-gray-800 py-1">I{service.toolTwo}</p>
+                <p className="text-gray-800 py-1">{service.toolThree}</p>
               </div>
             ))}
           </div>
@@ -156,7 +158,7 @@ export default function Home() {
         <section>
           <div>
             <h3 className="text-3xl py-1 dark:text-white">Portfolio</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+            <p className="text-md py-2 leading-8 text-gray-800 md:text-lg dark:text-gray-200">
               Since the beginning of my journey as a freelance developer and
               designer, I have done remote work for
               <span className="text-teal-500"> agencies </span>
@@ -164,7 +166,7 @@ export default function Home() {
               and collaborated with talented people to create digital products
               for both business and consumer use.
             </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+            <p className="text-md py-2 leading-8 text-gray-800 md:text-lg dark:text-gray-200">
               I offer a wide range of services, including programming and
               teaching.
             </p>
